@@ -23,7 +23,7 @@ refresh();
 function refresh(){
     currentPlayer = 'X';
     gameGrid =["","","","","","","","",""];
-    gameInfo.innerText = `Current Player - ${currentPlayer}`;
+    gameInfo.innerText = `Current Player   ${currentPlayer}`;
     newGame.classList.remove('active');
     gameInfo.classList.remove('winInfo');
     gameInfo.classList.remove('drawInfo');
@@ -76,7 +76,7 @@ function checkWin(){
                 boxes[position[j]].classList.add('win');
             }
 
-            gameInfo.innerText = `WINNER - ${answer[0]}`;
+            gameInfo.innerText = `WINNER   ${answer[0]}`;
             gameInfo.classList.add('winInfo');
             boxes.forEach(box=>{
                 box.style.pointerEvents = "none";
