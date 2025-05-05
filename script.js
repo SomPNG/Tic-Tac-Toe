@@ -54,7 +54,7 @@ function handleClick(index){
 
         // swapping current player
         currentPlayer = currentPlayer === 'X'?'O':'X';
-        gameInfo.innerText = `Current Player - ${currentPlayer}`;
+        gameInfo.innerText = `Current Player   ${currentPlayer}`;
 
         checkWin();
         checkDraw();
